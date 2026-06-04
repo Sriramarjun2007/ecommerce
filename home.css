@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+}
+.headofoverview{
+    height: 35px;
+    background-color: #2d421c;
+    left: 0;
+    display: flex;
+}
+.urban{
+    color: white;
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+.offers{
+    color:whitesmoke;
+    margin-top: 8px;
+    text-align: center;
+    padding-left: 400px;
+    font-family: 'Poppins', sans-serif;
+}
+.quickacces{
+    height: 55px;
+    background-color: #F4E6D3;
+    display: flex;
+}
+.quickacces ol{
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    text-align:center;
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 480px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.quickacces a{
+    text-decoration: none;
+    color: rgb(74, 72, 72);
+}
+.sofa-icon{
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+    padding: 5px;
+    align-items: center;
+}
+.searchbar{
+    display: flex;
+    gap: 5px;
+    padding-left: 190px;
+    padding-top: 10px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 170px;
+    height: 35px;
+    border-radius: 25px;
+    padding: 0 15px;
+    margin-top: 12px;
+    margin-left: 120px;
+}
+
+.search-icon{
+    color: gray;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.search-bar{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+}
+.login{
+    text-align: center;
+    color: #1d2540;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icon{
+    font-size: 15px;
+}
+
+.login p{
+    margin-top: 5px;
+    font-size: 10px;
+}

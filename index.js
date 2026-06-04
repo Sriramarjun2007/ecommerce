@@ -8,3 +8,17 @@ function afterform(){
     login.style.display="block";
     signupcontainer.style.display="none";
 }
+function loginfirst(){
+    alert("Login to proceed");
+}
+function homepage(){
+    let form=document.getElementById("loginform");
+     if (form.checkValidity()) {
+        window.location.href = "homepage.html";
+    } else {
+        form.reportValidity();
+    }
+}
+function loginicon(){
+    window.location.href="index.html";
+}

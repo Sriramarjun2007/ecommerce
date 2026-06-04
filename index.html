@@ -15,11 +15,11 @@
     </section>
     <section class="quickacces">
         <ol>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#Furniture">Furniture</a></li>
-            <li><a href="#HomeDector">Home Dector</a></li>
-            <li><a href="#KitchenDining">Kitchen Dining</a></li>
-            <li><a href="#Lamps&Lighting">Lamps&Lighting</a></li>
+            <li onclick="loginfirst()">Home</li>
+            <li onclick="loginfirst()">Furniture</li>
+            <li onclick="loginfirst()">Home Dector</li>
+            <li onclick="loginfirst()">Kitchen Dining</li>
+            <li onclick="loginfirst()">Lamps&Lighting</li>
         </ol>
     </section>
     <section id="loginpage">
@@ -28,7 +28,7 @@
             <p class="loginmsg">Sign in to your account</p>
         </div>
         <div class="details">
-            <form>
+            <form id="loginform">
                 <table>
                     <tr>
                         <td><input type="name" required placeholder="username" class="nameuser"></td>
@@ -38,7 +38,7 @@
                     </tr>   
                     <tr></tr>
                     <tr>
-                        <td><button type="submit" required class="login">login</button></td>
+                        <td><button type="button" required class="login" onclick="homepage()">login</button></td>
                     </tr>
                 </table>
             </form>
