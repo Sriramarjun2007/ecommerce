@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="headofoverview">
+        <span class="material-symbols-outlined sofa-icon">weekend</span>
+        <p class="urban">Urban Nest</p>
+        <p class="offers">Free Shipping on Orders Over $500 | Winter Sale - Up to 40% Off</p>
+    </section>
+    <section class="quickacces">
+        <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Furniture">Furniture</a></li>
+            <li><a href="#HomeDector">Home Dector</a></li>
+            <li><a href="#KitchenDining">Kitchen Dining</a></li>
+            <li><a href="#Lamps&Lighting">Lamps&Lighting</a></li>
+        </ol>
+    </section>
+    <section id="loginpage">
+        <div class="loginhead">
+            <h2>Welcome Back</h2>
+            <p class="loginmsg">Sign in to your account</p>
+        </div>
+        <div class="details">
+            <form>
+                <table>
+                    <tr>
+                        <td><input type="name" required placeholder="username" class="nameuser"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" required placeholder="password" class="userpass"></td>
+                    </tr>   
+                    <tr></tr>
+                    <tr>
+                        <td><button type="submit" required class="login">login</button></td>
+                    </tr>
+                </table>
+            </form>
+            <p class="inform">Don't have an account?<a href="#siginup" onclick="signup()" > Sign Up</a></p>
+            <p class="other">Or continue with</p>
+        </div>
+        <div class="social-login">
+
+            <button class="social-btn">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google">
+                Google
+            </button>
+
+            <button class="social-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+                Facebook
+            </button>
+
+        </div>
+    </section>
+    <div id="signup-container">
+
+        <div class="signup-header">
+            <h1>Sign Up</h1>
+            <p>Sign in to your account</p>
+        </div>
+
+        <div class="signup-form">
+
+            <input type="text" placeholder="Name:">
+            <input type="text" placeholder="User Name:">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password:">
+            <input type="text" placeholder="Country">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Place">
+
+            <button class="signup-btn" onclick="afterform()">Sign Up</button>
+
+        </div>
+
+    </div>  
+    <script src="index.js"></script>
+</body>
+</html>
