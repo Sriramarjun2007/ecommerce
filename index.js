@@ -22,3 +22,13 @@ function homepage(){
 function loginicon(){
     window.location.href="index.html";
 }
+
+let cartCount = 0;
+
+function addtocart() {
+    cartCount++;
+
+    document.getElementById("cart-count").innerText = cartCount;
+
+    alert("Added to cart!");
+}

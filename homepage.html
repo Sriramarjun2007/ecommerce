@@ -31,7 +31,7 @@
                 <div class="icon">👤</div>
                 <p>Login</p>
             </div>
-            <div class="cart-icon">
+            <div class="cart-icon" onclick="showCart()">
                 🛒 <span id="cart-count">0</span>
             </div>
         </section>
@@ -77,27 +77,156 @@
                 <div class="box">
                     <img src="images/page3_img6.jpg">
                     <p class="titleofproduct">Sofa seating</p>
+                    <p class="description">Milano Luxury Sofa</p>
+                    <span class="star">★★★★★</span>(5)
+                     <div class="addtokart"  onclick="addtocart('Sofa seating',2499)">
+                        <div>🛒 Quick add</div>
+                    </div>
+                    <div style="display: flex; gap: 10px;" class="pricediv"><p>$2499</p> <p class="orginal">$3299</p></div>
             </div>
                 <div class="box">
                     <img src="images/page3_img14.jpg">
-                    <p class="titleofproduct">Sofa seating</p>
+                    <p class="titleofproduct">Kitchen dining</p>
+                    <p class="description">Elegance Dining Set</p>
+                    <span class="star">★★★★★</span>(5)
+                     <div class="addtokart"  onclick="addtocart('Kitchen dining',3099)">
+                        <div>🛒 Quick add</div>
+                    </div>
+                    <div style="display: flex; gap: 10px;" class="pricediv"><p>$3099</p> <p class="orginal">$3299</p></div>
+                    <div class="discount">24% Off</div>
                 </div>
                 <div class="box">
                     <img src="images/page5_img3.jpg">
-                    <p class="titleofproduct">Sofa seating</p>
+                    <p class="titleofproduct">Furniture</p>
+                    <p class="description">Luxe Bedroom Collection</p>
+                    <span class="star">★★★★★</span>(5)
+                     <div class="addtokart"  onclick="addtocart('Furniture',4299)">
+                        <div>🛒 Quick add</div>
+                    </div>
+                    <div class="pricediv"><p>$4299</p></div>
                 </div>
                 <div class="box">
                     <img src="images/page4_img14.jpg">
-                    <p class="titleofproduct">Sofa seating</p>
+                    <p class="titleofproduct">Lamp & Lighting</p>
+                    <p class="description">Modern Arc floor Lamp</p>
+                    <span class="star">★★★★★</span>(5)
+                     <div class="addtokart"  onclick="addtocart('Lamp & Lighting',599)">
+                        <div>🛒 Quick add</div>
+                    </div>
+                    <div class="pricediv"><p>$599</p></div>
+                    <div class="discount">24% Off</div>
                 </div>
                 <div class="box">
                     <img src="images/page3_img13.jpg">
-                    <p class="titleofproduct">Sofa seating</p>
+                    <p class="titleofproduct">Home Decor</p>
+                    <p class="description">Botanical Decor collection</p>
+                    <span class="star">★★★★★</span>(5)
+                     <div class="addtokart"  onclick="addtocart('Home Decor',2499)">
+                        <div>🛒 Quick add </div>
+                    </div>
+                    <div style="display: flex; gap: 10px;" class="pricediv"><p>$2499</p> <p class="orginal">$3299</p></div>
+                    <div class="discount">24% Off</div>
                 </div>
-                <div class="box"><img src="images/page4_img10.jpg"></div>
-                <div class="box"><img src="images/page4_img11.jpg"></div>
-                <div class="box"><img src="images/page4_img6.jpg"></div>
+                <div class="box">
+                    <img src="images/page4_img10.jpg">
+                    <p class="titleofproduct">Sofa & Seating</p>
+                    <p class="description">Classic Armchair</p>
+                    <span class="star">★★★★★</span>(5)
+                     <div class="addtokart"  onclick="addtocart('Sofa & Seating',899)">
+                        <div>🛒 Quick add</div>
+                    </div>
+                    <div class="pricediv"><p>$899</p></div>
+                </div>
+                <div class="box">
+                    <img src="images/page4_img11.jpg">
+                    <p class="titleofproduct">Furniture</p>
+                    <p class="description">Walnut Coffee Table</p>
+                    <span class="star">★★★★★</span>(5)
+                     <div class="addtokart"  onclick="addtocart('Furniture',799)">
+                        <div>🛒 Quick add</div>
+                    </div>
+                    <div class="pricediv"><p>$799</p></div>
+                    <div class="discount">15% Off</div>
+                </div>
+                <div class="box">
+                    <img src="images/page4_img6.jpg">
+                    <p class="titleofproduct">Kitchen&Dining</p>
+                    <p class="description">Modern Kitchen Island</p>
+                    <span class="star">★★★★★</span>(5)
+                    <div class="addtokart"  onclick="addtocart('Kitchen&Dining',1899)">
+                        <div>🛒 Quick add</div>
+                    </div>
+                    <div class="pricediv"><p>$1899</p></div>
+                    <div class="discount">20% Off</div>
+                </div>
             </div>
-        </section>
+            <div class="quality">
+                <div><p class="iconofquality">🚚</p><p class="headofquality">Free Shipping</p><p class="paraquality">On orders over $500</p></div>
+                <div><p class="iconofquality">💎</p><p class="headofquality">Premium Quality</p><p class="paraquality">Handcrafted with care</p></div>
+                <div><p class="iconofquality">📞</p><p class="headofquality">24/7 Support</p><p class="paraquality">we're here to help</p></div>
+            </div>
+        </section>    
+        <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h2><span class="material-symbols-outlined sofa-icon">weekend</span> UrbanNest</h2>
+            <p>
+                Elevating modern living through timeless
+                craftsmanship and sustainable design.
+                Based in New York, shipping globally.
+            </p>
+
+            <div class="social-icons">
+                <span>🌐</span>
+                <span>📷</span>
+                <span>🔗</span>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Shop</h3>
+            <p>Living Room</p>
+            <p>Bedroom</p>
+            <p>Dining Room</p>
+            <p>Home Office</p>
+            <p>Outdoor Furniture</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <p>Shipping & Delivery</p>
+            <p>Return Policy</p>
+            <p>Warranty Info</p>
+            <p>Care Guide</p>
+            <p>Contact Us</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Flagship Showroom</h3>
+            <p>242 Mercer Street</p>
+            <p>New York, NY 10012</p>
+            <p>United States</p>
+
+            <br>
+
+            <p>Mon - Sat: 10am - 7pm</p>
+            <p>Sun: 11am - 5pm</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p>© 2024 UrbanNest Furniture. All rights reserved.</p>
+
+        <div class="footer-links">
+            <span>Privacy Policy</span>
+            <span>Terms of Service</span>
+            <span>Accessibility</span>
+        </div>
+    </div>
+</footer>
     </body>
 </html>
