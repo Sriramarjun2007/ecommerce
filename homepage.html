@@ -18,7 +18,7 @@
         <section class="quickacces">
             <ol>
                 <li><a href="#home">Home</a></li>
-                <li> <a href="#Furniture">Furniture</a></li>
+                <li><a href="#" id="furniture-btn">Furniture</a></li>
                 <li><a href="#HomeDector">Home Dector</a></li>
                 <li><a href="#KitchenDining">Kitchen Dining</a></li>
                 <li><a href="#Lamps&Lighting">Lamps&Lighting</a></li>
@@ -32,10 +32,57 @@
                 <p>Login</p>
             </div>
             <div class="cart-icon" onclick="showCart()">
-                🛒 <span id="cart-count">0</span>
-            </div>
-        </section>
-        <script src="index.js"></script>
+    🛒 <span id="cart-count">0</span>
+</div>
+</section>
+
+<!-- CART PAGE -->
+<div id="cart-page">
+
+    <h1>Your Cart</h1>
+
+    <div class="cart-layout">
+
+        <!-- Products will appear here -->
+        <div id="cart-items"></div>
+
+        <!-- Order Summary -->
+        <div class="summary">
+
+            <h2>Order Summary</h2>
+
+            <p>
+                Subtotal:
+                <span id="subtotal">$0</span>
+            </p>
+
+            <p>
+                Shipping:
+                <span>Free</span>
+            </p>
+
+            <hr>
+
+            <p>
+                Total:
+                <span id="total-price">$0</span>
+            </p>
+
+            <button class="checkout-btn">
+                Proceed To Checkout
+            </button>
+
+            <br><br>
+
+            <button class="close-cart-btn" onclick="closeCart()">
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
         <section id="home" >
             <h1>Craft Comfort.<br>Live Beautifully.</h1>
             <p class="paraintro"><i>Discover curated pieces that blend
@@ -69,7 +116,7 @@
                     <div class="title">Dining Table</div>
                 </div>
             </div>
-            <div class="featuredproduct">
+            <div id="featuredproduct">
                 <h1 class="featurehead">Featured Product</h1>
                 <p class="featurepara">Handpicked items from our latest collection</p>
             </div>
@@ -79,7 +126,7 @@
                     <p class="titleofproduct">Sofa seating</p>
                     <p class="description">Milano Luxury Sofa</p>
                     <span class="star">★★★★★</span>(5)
-                     <div class="addtokart"  onclick="addtocart('Sofa seating',2499)">
+                     <div class="addtokart"  onclick="addtocart('Sofa seating',2499,'images/page3_img6.jpg')">
                         <div>🛒 Quick add</div>
                     </div>
                     <div style="display: flex; gap: 10px;" class="pricediv"><p>$2499</p> <p class="orginal">$3299</p></div>
@@ -89,7 +136,7 @@
                     <p class="titleofproduct">Kitchen dining</p>
                     <p class="description">Elegance Dining Set</p>
                     <span class="star">★★★★★</span>(5)
-                     <div class="addtokart"  onclick="addtocart('Kitchen dining',3099)">
+                     <div class="addtokart"  onclick="addtocart('Kitchen dining',3099,'images/page3_img14.jpg')">
                         <div>🛒 Quick add</div>
                     </div>
                     <div style="display: flex; gap: 10px;" class="pricediv"><p>$3099</p> <p class="orginal">$3299</p></div>
@@ -100,7 +147,7 @@
                     <p class="titleofproduct">Furniture</p>
                     <p class="description">Luxe Bedroom Collection</p>
                     <span class="star">★★★★★</span>(5)
-                     <div class="addtokart"  onclick="addtocart('Furniture',4299)">
+                     <div class="addtokart"  onclick="addtocart('Furniture',4299,'images/page5_img3.jpg')">
                         <div>🛒 Quick add</div>
                     </div>
                     <div class="pricediv"><p>$4299</p></div>
@@ -110,7 +157,7 @@
                     <p class="titleofproduct">Lamp & Lighting</p>
                     <p class="description">Modern Arc floor Lamp</p>
                     <span class="star">★★★★★</span>(5)
-                     <div class="addtokart"  onclick="addtocart('Lamp & Lighting',599)">
+                     <div class="addtokart"  onclick="addtocart('Lamp & Lighting',599,'images/page4_img14.jpg')">
                         <div>🛒 Quick add</div>
                     </div>
                     <div class="pricediv"><p>$599</p></div>
@@ -121,7 +168,7 @@
                     <p class="titleofproduct">Home Decor</p>
                     <p class="description">Botanical Decor collection</p>
                     <span class="star">★★★★★</span>(5)
-                     <div class="addtokart"  onclick="addtocart('Home Decor',2499)">
+                     <div class="addtokart"  onclick="addtocart('Home Decor',2499,'images/page3_img13.jpg')">
                         <div>🛒 Quick add </div>
                     </div>
                     <div style="display: flex; gap: 10px;" class="pricediv"><p>$2499</p> <p class="orginal">$3299</p></div>
@@ -132,7 +179,7 @@
                     <p class="titleofproduct">Sofa & Seating</p>
                     <p class="description">Classic Armchair</p>
                     <span class="star">★★★★★</span>(5)
-                     <div class="addtokart"  onclick="addtocart('Sofa & Seating',899)">
+                     <div class="addtokart"  onclick="addtocart('Sofa & Seating',899,'images/page4_img10.jpg')">
                         <div>🛒 Quick add</div>
                     </div>
                     <div class="pricediv"><p>$899</p></div>
@@ -142,7 +189,7 @@
                     <p class="titleofproduct">Furniture</p>
                     <p class="description">Walnut Coffee Table</p>
                     <span class="star">★★★★★</span>(5)
-                     <div class="addtokart"  onclick="addtocart('Furniture',799)">
+                     <div class="addtokart"  onclick="addtocart('Furniture',799,'images/page4_img11.jpg')">
                         <div>🛒 Quick add</div>
                     </div>
                     <div class="pricediv"><p>$799</p></div>
@@ -153,7 +200,7 @@
                     <p class="titleofproduct">Kitchen&Dining</p>
                     <p class="description">Modern Kitchen Island</p>
                     <span class="star">★★★★★</span>(5)
-                    <div class="addtokart"  onclick="addtocart('Kitchen&Dining',1899)">
+                    <div class="addtokart"  onclick="addtocart('Kitchen&Dining',1899,'images/page4_img6.jpg')">
                         <div>🛒 Quick add</div>
                     </div>
                     <div class="pricediv"><p>$1899</p></div>
@@ -308,6 +355,41 @@
 
 </section>
 
+
+<div id="sidebar">
+
+    <span id="close-sidebar">&times;</span>
+
+    <h2>Furniture Filters</h2>
+
+    <h3>Category</h3>
+
+    <label>
+        <input type="radio" name="category" checked id="allproduct">
+        All
+    </label><br><br>
+
+    <label>
+        <input type="radio" name="category">
+        Furniture
+    </label><br><br>
+
+    <label>
+        <input type="radio" name="category">
+        Home Decor
+    </label><br><br>
+
+    <label>
+        <input type="radio" name="category">
+        Sofa
+    </label><br><br>
+
+    <label>
+        <input type="radio" name="category">
+        Kitchen Dining
+    </label>
+
+</div>
 </section>
         <footer class="footer">
     <div class="footer-container">
