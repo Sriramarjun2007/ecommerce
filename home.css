@@ -83,6 +83,12 @@ body{
     font-size: 14px;
     background: transparent;
 }
+.user-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 .login{
     text-align: center;
     color: #1d2540;
@@ -291,10 +297,14 @@ body{
 }
 .quality{
     display: flex;
+    justify-content: center;
     gap: 60px;
-    margin-left: 500px;
     margin-top: 50px;
     margin-bottom: 0;
+    flex-wrap: wrap;
+}
+.quality div{
+    text-align: center;
 }
 .iconofquality{
     height: 40px;
@@ -531,13 +541,13 @@ body{
 #sidebar{
     position: fixed;
     top: 70px;
-    left: -320px;
+    left: -100%;
     width: 250px;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background: white;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0,0,0,0.2);
-    transition: left 0.4s ease;
+    transition: 0.4s ease;
     z-index: 9999;
 }
 
@@ -676,4 +686,204 @@ body{
 
 .close-cart-btn:hover{
     background:#bbb;
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+   ========================== */
+@media screen and (max-width: 768px){
+
+    .headofoverview{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .urban{
+        font-size: 22px;
+    }
+
+    .offers{
+        padding-left: 0;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .quickacces{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .quickacces ol{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .search-container{
+        margin: 15px 0;
+        width: 90%;
+        max-width: 300px;
+    }
+      .user-actions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 10px;
+    }
+
+    .login{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .login p{
+        margin: 0;
+    }
+
+    .cart-icon{
+        font-size: 22px;
+    }
+
+    #home{
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #home h1{
+        padding-top: 120px;
+        font-size: 36px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .paraintro{
+        width: 80%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .imgcategory{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .product{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .productkart{
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .box{
+        width: 300px;
+    }
+
+    .quality{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .iconofquality{
+        margin: 0 auto;
+    }
+
+    .headofquality,
+    .paraquality{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .review-grid{
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .review-card{
+        width: auto;
+    }
+
+    .faq-container{
+        width: 95%;
+    }
+
+    .faq-heading{
+        font-size: 35px;
+    }
+
+    .faq-question{
+        font-size: 16px;
+        padding: 18px;
+    }
+
+    .footer{
+        padding: 40px 20px;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+    #sidebar{
+        width: 220px;
+        left: -260px;
+        top: 0;
+        height: 100vh;
+    }
+
+   #cart-page{
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    #cart-page h1{
+        font-size: 32px;
+        margin-top: 10px;
+    }
+
+    .cart-item{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-item img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .checkout-btn,
+    .close-cart-btn{
+        width: 100%;
+    }
 }
