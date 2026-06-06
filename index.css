@@ -9,27 +9,34 @@ body{
     margin: 0;
 }
 .headofoverview{
-    height: 35px;
-    background-color: #2d421c;
-    left: 0;
+    background-color: #233d12;
+    height: 50px;
     display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 15px;
 }
+
+.sofa-icon{
+    color: white;
+    font-size: 32px;
+}
+
 .urban{
     color: white;
     font-size: 20px;
-    margin-top: 8px;
-    text-align: center;
+    margin: 0 0 0 10px;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 0;
-    letter-spacing: 1px;
-    flex: 1;
 }
+
 .offers{
-    color:whitesmoke;
-    margin-top: 8px;
-    text-align: center;
-    padding-left: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: white;
     font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
 }
 .quickacces{
     height: 45px;
@@ -255,21 +262,32 @@ body{
 @media screen and (max-width: 768px){
 
     .headofoverview{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
-        padding: 10px;
-        text-align: center;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .sofa-icon{
+        font-size: 35px;
     }
 
     .urban{
+        margin: 0;
         font-size: 18px;
-        margin: 5px 0;
     }
 
     .offers{
-        padding-left: 0;
-        font-size: 12px;
-        margin: 5px 0;
+        position: static;      /* remove absolute positioning */
+        transform: none;
+        margin: 0;
+        text-align: center;
+        white-space: normal;   /* allow text to wrap */
+        font-size: 14px;
+        line-height: 1.3;
     }
 
     .quickacces{
@@ -319,7 +337,8 @@ body{
     .social-login{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
+        margin-top: 0;
     }
 
     .social-btn{
